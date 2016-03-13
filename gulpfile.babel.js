@@ -118,7 +118,7 @@ gulp.task('scripts', () =>
       ))
       .pipe($.sourcemaps.write())
       .pipe(gulp.dest('.tmp/scripts'))
-      .pipe($.concat('main.min.js'))
+      .pipe($.concat('build.min.js'))
       .pipe($.uglify({preserveComments: 'some'}))
       // Output files
       .pipe($.size({title: 'scripts'}))
